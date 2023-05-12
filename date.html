@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> new Date </h2>
+    <p id="demo"> full year = </p>
+    <p id="demo1"> date = </p>
+    <p id="demo2"> month = </p>
+    <p id="demo3"> day = </p>
+    <p id="demo4"> time = </p>
+    <p id="demo5"> minute = </p>
+    <p id="demo6"> sec = </p>
+    <script>
+        const d=new Date();
+        //setting date method in setdate
+
+     
+
+        //const d=new Date("2000-10-22 16:20:33");    //constand date time denyasathi
+
+        document.getElementById("demo").innerHTML+=d.getFullYear(); //.getfullyear() to exicute only year...
+        document.getElementById("demo1").innerHTML+=d.getDate();
+        document.getElementById("demo2").innerHTML+=d.getMonth();
+        document.getElementById("demo3").innerHTML+=d.getDay();
+        document.getElementById("demo4").innerHTML+=d.getTime();
+        document.getElementById("demo5").innerHTML+=d.getMinutes();
+        document.getElementById("demo6").innerHTML+=d.getSeconds();
+    </script>
+</body>
+</html>
